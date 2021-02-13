@@ -1,0 +1,18 @@
+print("CUANTO FALTA PARA...")
+a = int(input("Introduzca el año en que nos encontramos\n"))
+b = int(input("Introduzca un año aleatorio\n"))
+if b > a:
+    c = b - a
+    if c==1:
+        print(f"Falta solo 1 año para llegar a {b}")
+    else:
+        print(f"Faltan {c} años para que llegue {b}")
+
+elif b<a:
+    c=a-b
+    if c==1:
+        print(f"Hace solo 1 que dejamos atrás a {b}")
+    else:
+        print(f"Hace {c} años que dejamos atrás {b}")
+else:
+    print(f"Ambos años son iguales, estamos en {a}")
