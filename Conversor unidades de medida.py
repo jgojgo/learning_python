@@ -1,11 +1,11 @@
-print("CM a KM, M y CM")
-d = float(input("Introduzca una distancia en centímetros:\n"))
-if d >= 100000:
-    print(f"{d} centímetros son: {d / 100000}KM, {d / 100}M, {d}CM.")
-elif 100 <= d < 100000:
-    print(f"{d} centímetros son: 0KM, {d / 100}M, {d}CM.")
+print("CONVERSOR DE CENTÍMETROS A KILOMETROS, METROS Y CENTÍMETROS")
+a = float(input("Introduzca una distancia en centímetros:\n"))
+if a <= 0:
+    print("Este programa no admite valores negativos o nulos.")
 else:
-    if 0 < d <100:
-        print(f"{d} centímetros son: 0KM, 0M, {d}CM.")
+    if a >= 100000:
+        print(f"{a} centímetros son {a // 100000}km, {(a % 100000) // 100}m y {((a % 1000) % 100)}cm")
+    elif 100 <= a < 100000:
+        print(f"{a} centímetros son {a // 100}m y {a % 100}cm")
     else:
-        print("Este programa no acepta ni valores nulos ni valores negativos")
+        print(f"Es lo mismo, {a} centímetros son {a}cm")
